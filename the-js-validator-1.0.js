@@ -49,7 +49,7 @@ var TheJsValidator = function(fieldsToValidate, errorDiv) {
         var isValid;
         var fieldId;
         switch (validationValues.type) {
-            case "notEmpty":
+            case "required":
                 fieldId = validationValues.field[0].id;
                 if (validationValues.field.val() == "") {
                     isValid = false;
